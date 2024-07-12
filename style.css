@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;/*ocupa toda altura dop navegador*/
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;/*centralizar*/
+    padding: 0 4%;/*0 pra cima e baixo, 4 pros lados*/
+}
+
+img {
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*BACKGROUND LINEAR*/
+#culi{
+    padding-bottom: 70px;
+}
+#pw b{
+    color: #4f77fa;
+}
+#pw {
+    position: relative;
+    background-color: transparent; /* torna o fundo da nav transparente */
+    max-width: 1200px; /* largura máxima da nav */
+    margin: 0 auto; /* centraliza a nav horizontalmente */
+    padding: 1px; /* exemplo de padding interno */
+    padding-bottom: 100px;
+    box-sizing: border-box; /* inclui padding no cálculo da largura */
+}
+#pw:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* largura igual à largura da tela */
+    height: 100%; /* altura igual à altura da nav */
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da nav */
+}
+#penul{
+    padding-bottom: 70px;
+}
+#fim{
+    position: relative;
+    background-color: transparent; /* torna o fundo da nav transparente */
+    max-width: 1200px; /* largura máxima da nav */
+    margin: 0 auto; /* centraliza a nav horizontalmente */
+    padding: 10px; /* exemplo de padding interno */
+    box-sizing: border-box; /* inclui padding no cálculo da largura */
+}
+#fim:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* largura igual à largura da tela */
+    height: 100%; /* altura igual à altura da nav */
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da nav */
+}
+#best {
+    position: relative;
+    background-color: transparent; /* torna o fundo da nav transparente */
+    max-width: 1200px; /* largura máxima da nav */
+    margin: 0 auto; /* centraliza a nav horizontalmente */
+    padding: 10px; /* exemplo de padding interno */
+    box-sizing: border-box; /* inclui padding no cálculo da largura */
+}
+#best:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* largura igual à largura da tela */
+    height: 100%; /* altura igual à altura da nav */
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da nav */
+}
+#america{
+    padding-bottom: 70px;
+}
+#fauna{
+    position: relative;
+    background-color: transparent; /* torna o fundo da nav transparente */
+    max-width: 1200px; /* largura máxima da nav */
+    margin: 0 auto; /* centraliza a nav horizontalmente */
+    padding: 10px; /* exemplo de padding interno */
+    box-sizing: border-box; /* inclui padding no cálculo da largura */
+}
+#fauna:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* largura igual à largura da tela */
+    height: 100%; /* altura igual à altura da nav */
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da nav */
+}/*BACKGROUND LINEAR*/
+
+
+
+
+
+
+/*MENU*/
+nav {
+    position: relative;
+    background-color: transparent; /* torna o fundo da nav transparente */
+    max-width: 1200px; /* largura máxima da nav */
+    margin: 0 auto; /* centraliza a nav horizontalmente */
+    padding: 10px; /* exemplo de padding interno */
+    box-sizing: border-box; /* inclui padding no cálculo da largura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* largura igual à largura da tela */
+    height: 100%; /* altura igual à altura da nav */
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da nav */
+}
+nav .menu-icon{
+    cursor: pointer;
+    display: none;/*pra desaparecer*/
+}
+nav .logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color:  #ffffff;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;/*centralizar os elementos filhos da ul na vertical*/
+}
+nav ul li{
+    padding: 0 15px;/*0px cima baixo, 15px lados*/
+    transition: .2s;
+}
+nav ul li:hover{
+    transform: scale(1.05);
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;/*vai fazer com que o texto dos links fiquem todos em maiusculo*/
+    color: #ffffff;
+}/*MENU*/
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+/*PRIMEIRA*/
+.co {
+    padding-left: 25px;
+}
+section.topo-do-site{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-bx{
+    width: 50%;
+    padding-right: 19px;
+}
+.text-bx h1{
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;/*tds letras ficarem maiúsculas*/
+}
+b{
+    color: rgb(0, 38, 255);
+}
+.text-bx p{
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 20px;/*espaçamento externo*/
+}
+/*IMAGEM RESPONSIVA*/
+.img-bx{
+    width: 50%;
+}
+.img-bx img{
+    width: 100%;
+    height: 90%;
+}/*IMAGEM RESPONSIVA*/
+/*PRIMEIRA*/
+
+
+
+
+
+
+
+.cobox{
+    width: 50%;
+}
+.cobox img{
+    width: 80%;
+    height: 70%;
+}
+.pobox{
+    width: 30%;
+}
+.pobox img{
+    width: 90%;
+    height: 80%;
+}
+
+
+
+
+
+
+/*SEGUNDA SECTION*/
+section.segunda{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.segunda .text-bx{
+    width: 70%;
+}
+.text-bx .titulo{
+    padding-top: 20px;
+}
+.text-bx h2{
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;/*tds letras ficarem maiúsculas*/
+}
+.img-bx2{
+    width: 26%;
+    gap: 4%;
+}
+.img-bx2 img{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+
+/*TERCEIRA*/
+section.terceira{
+    text-align: center;
+    margin-top: 130px;
+    color: white;
+}
+.terceira h2 {
+    margin-bottom: 70px; /* Adiciona espaço abaixo do h2 */
+    font-size: 2rem;
+    text-transform: uppercase;/*tds letras ficarem maiúsculas*/
+}
+.terceira .box:hover {
+    transform: scale(1.05);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box {
+    padding-top: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(100deg, #0515cc, #ff0000);
+    transition: .2s;
+    text-align: center;
+    border: 2px solid #cecece;
+    border-radius: 8px;
+    width: 300px; /* Largura fixa dos boxes (ajuste conforme necessário) */
+}
+.img-bx3 {
+    padding: 20px 0; /* Espaçamento interno para as imagens */
+}
+.img-bx3 img {
+    max-width: 80%; /* Garante que a imagem não ultrapasse o tamanho da div */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    transition: .2s;
+}
+.box h3 {
+    font-size: 2rem;
+    color:#bcccff;
+    margin: 10px 0; /* Espaçamento em torno do título */
+}
+.box p {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 0 20px; /* Espaçamento interno para o texto */
+    padding-bottom: 40px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+
+
+
+/*ULTIMA*/
+section.final{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 130px;
+    justify-content: space-between;
+    color: white;
+    gap: 4%;
+}
+.text-bx4{
+    text-align: left;
+    padding-bottom: 30px;
+}
+.text-bx4 h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;/*tds letras ficarem maiúsculas*/
+}
+
+
+
+
+
+
+@media (max-width:970px){
+    nav .menu-icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #001aff;
+    }
+    nav ul.active{
+        transform: translateX(0);
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+    }
+    section.topo-do-site{
+        flex-direction: column;
+    }
+    .text-bx,
+    .img-bx/*aplica para as duas div*/{
+        width: 100%;
+        text-align: center;
+    }
+    .text-bx{
+        margin-bottom: 40px;
+    }
+    section.segunda{
+        flex-direction: column;
+    }
+    .img-bx2/*aplica para as duas div*/{
+        width: 90%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    section.terceira .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.final{
+        flex-direction: column;
+    }
+    .text-bx4{
+        text-align: center;
+    }
+    .video {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Proporção 16:9 do vídeo */
+        margin-bottom: 20px; /* Espaço opcional abaixo do vídeo */
+    }
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
